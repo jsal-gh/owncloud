@@ -40,6 +40,7 @@ EOF`
 
 # Authoritative dns test 
 Check for the correct url, this too can be a problem!
+
 `getent hosts get.coolify.io`
 
 # After dns resolves
@@ -64,10 +65,12 @@ Check for the correct url, this too can be a problem!
 
 # Force the protocol to HTTPS 
 (this fixes the duplicate if the lines are identical)
+
 `docker exec -it owncloud sed -i "s|'overwriteprotocol' => 'http'|'overwriteprotocol' => 'https'|g" /mnt/data/config/config.php`
 
 # Remove the redundant localhost line 
 (specifically if it still exists)
+
 `docker exec -it owncloud sed -i "/localhost/d" /mnt/data/config/config.php`
 
 `docker exec -it owncloud cat /mnt/data/config/config.php`
