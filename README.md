@@ -1,7 +1,7 @@
 # OwnCloud Deployment with Docker-Compose
 
 ## Overview
-This project provides a Docker-Compose setup for deploying OwnCloud along with MariaDB, Redis, and Collabora on the Coolify Platform.
+This project provides a Docker-Compose setup for deploying OwnCloud along with MariaDB, Redis, and Collabora on the Coolify Platform. In the coolify setup, we have taken the approach to have a control node for the Coolify admin ui. A second worker node is deployed for the docker workloads. The expectation is that more workers could be added, if and when needed.
 
 ## Components
 - **OwnCloud**: A self-hosted file sync and share server.
