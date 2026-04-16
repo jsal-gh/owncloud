@@ -77,4 +77,5 @@ Check for the correct url, this too can be a problem!
 
 `docker restart owncloud`
 
-
+# To configure external storage (sftp) back to homelab storage
+Install and configure tailscale on the PC/Server and on the worker node. Once these are both signed in, they will be able to communicate with each other.
